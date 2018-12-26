@@ -9,11 +9,22 @@
 
 \usepackage{graphicx} % Used for pictures
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry} % Used for margins
+
 \usepackage{listings} % For code source listing
 \lstset{language=Python} % default language of the source code
 
+\usepackage{hyperref} % Used for external links
+
+% Headers and footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lfoot{\textbf{CC-BY-SA}}
+\lhead{Pietro Prandini - Stefano Romanello (UniPD)}
+\cfoot{\thepage}
+
 % Author and title
-\author{Pietro Prandini - Stefano Romanello}
+\author{Pietro Prandini - Stefano Romanello - UniPD\\{\textbf{\tiny{CC-BY-SA}}}}
 \title{Generation and Analysing Network Attacks using Scapy\\{\small{Project of the Secure Network Management course by DECAMP}}}
 
 % Document
@@ -30,5 +41,9 @@
 \section{DoS Attacks}
 % inport DoS attacks to the document
 
+% Licence
+\vspace*{\fill}
+\centering
+\tiny{This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit \href{http://creativecommons.org/licenses/by-sa/4.0/}{http://creativecommons.org/licenses/by-sa/4.0/} or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.}
 
 \end{document}

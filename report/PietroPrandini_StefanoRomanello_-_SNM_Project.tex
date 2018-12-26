@@ -11,7 +11,7 @@
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry} % Used for margins
 
 \usepackage{listings} % For code source listing
-\lstset{language=Python} % default language of the source code
+\lstset{language=Python, frame=single} % Listing parameters
 
 \usepackage{hyperref} % Used for external links
 
@@ -19,8 +19,8 @@
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
-\lfoot{\textbf{CC-BY-SA}}
-\lhead{Pietro Prandini - Stefano Romanello (UniPD)}
+\rfoot{\tiny\textbf{CC-BY-SA}}
+\rhead{Pietro Prandini - Stefano Romanello (UniPD)}
 \cfoot{\thepage}
 
 % Author and title
@@ -34,12 +34,15 @@
 % Section of the Reconnaissance attacks
 \section{Reconnaissance Attacks}
 % inport recoinnaissance attacks to the document
-\input{tex/SampleOfAnAttack.tex}
-
+%\input{tex/SampleOfAnAttack.tex}
+\input{tex/IPSpoofing.tex}
+\input{tex/NoFlagsSet.tex}
 
 % Section ot the Dos attacks
 \section{DoS Attacks}
 % inport DoS attacks to the document
+\input{tex/ICMPRedirect.tex}
+\input{tex/PingOfDeath.tex}
 
 % Licence
 \vspace*{\fill}

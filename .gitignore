@@ -1,6 +1,4 @@
 **/*.aux
 **/*.log
 **/*.out
-**/*.sbx
-**/*.sxc
-**/*.sxd
+**/*.synctex.gz

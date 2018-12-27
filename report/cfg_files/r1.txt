@@ -1,10 +1,17 @@
 # Configuring the router 1 (R1)
 ## Basic configuration
 configure
-load /live/image/R1/lab16_rip
+load /live/image/R1/lab16
 commit
 
-## Adding the router R5
-set protocols rip network 192.168.42.0/24
+## Considering the new router R5
+delete interfaces ethernet eth0 address 192.168.40.1/24
 commit
-exit
+set interfaces ethernet eth0 vif 42 address 192.168.42.1/24
+commit
+
+## Enablig the RIP protocol
+set protocols rip interface eth0.42
+set protocols rip interface eth0.44
+set protocols rip interface eth0.50
+commit

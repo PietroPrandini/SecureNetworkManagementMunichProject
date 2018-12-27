@@ -3,8 +3,4 @@
 configure
 load /live/image/R3/lab16_rip
 commit
-
-## Adding the router R5
-set protocols rip network 192.168.42.0/24
-commit
 exit

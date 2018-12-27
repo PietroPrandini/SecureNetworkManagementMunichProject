@@ -30,9 +30,10 @@ delete interfaces ethernet eth0 vif 50
 set interfaces ethernet eth0 vif 42 address 192.168.42.12/24
 commit
 
-## Enabling routing-protocol RIP on eth0.42
+## Enabling routing-protocol RIP
 set protocols rip interface eth0.42
 set protocols rip network 192.168.40.0/24
+set protocols rip network 192.168.42.0/24
 set protocols rip redistribute connected
 set protocols rip timers timeout 35
 commit

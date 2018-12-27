@@ -40,4 +40,14 @@ set protocols rip interface eth0
 set protocols rip network 0.0.0.0/0
 commit
 
+## RIP of the other subnets
+set protocols rip network 192.168.40.0/24
+set protocols rip network 192.168.44.0/24
+set protocols rip network 192.168.48.0/24
+set protocols rip network 192.168.50.0/24
+set protocols rip network 192.168.55.0/24
+set protocols rip network 192.168.62.0/24
+set protocols rip redistribute connected
+commit
+
 exit

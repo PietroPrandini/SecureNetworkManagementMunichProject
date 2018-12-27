@@ -17,7 +17,9 @@ commit
 
 ## Enablig RIP
 set protocols rip interface eth0.42
+set protocols rip interface eth0
 set protocols rip network 192.168.40.0/24
+set protocols rip network 192.168.42.0/24
 set protocols rip redistribute connected
 set protocols rip timers timeout 35
 commit
@@ -28,14 +30,14 @@ commit
 
 edit nat source rule 10
 	set translation address masquerade
-	set source address 192.168.32.0/24 # The CIDR of the NAT
+	set source address 10.0.2.0/24 # The CIDR of the NAT
 	set outbound-interface eth1
 commit
 exit
 
 ## NAT routing
 set protocols rip redistribute static
-set protocols rip interface eth0
+set protocols rip interface eth1
 set protocols rip network 0.0.0.0/0
 commit
 

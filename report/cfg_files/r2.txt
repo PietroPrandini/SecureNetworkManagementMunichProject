@@ -1,0 +1,8 @@
+# Configuring the router 2 (R2)
+## Basic configuration
+configure
+load /live/image/R2/lab16_rip
+commit
+
+## Adding the router R5
+set protocols rip network 192.168.42.0/24

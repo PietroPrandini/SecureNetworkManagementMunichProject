@@ -1,0 +1,41 @@
+\subsection{Devices Configuration}
+
+\subsubsection*{R5}
+The Router5 is a clone of the Router1.
+The network of this router is composed by two enabled adapters:
+\begin{itemize}
+	\item Adapter 1: Internal Network (Name: intnet);
+	\item Adapter 2: NAT Network (Name: NatNetwork).
+\end{itemize}
+After the start of the machine it is setted with this commands:
+
+\lstinputlisting[language=bash]{cfg_files/r5.txt}
+
+\subsubsection*{R1}
+\lstinputlisting[language=bash]{cfg_files/r1.txt}
+
+\subsubsection*{R2}
+\lstinputlisting[language=bash]{cfg_files/r2.txt}
+
+\subsubsection*{R3}
+\lstinputlisting[language=bash]{cfg_files/r3.txt}
+
+\subsubsection*{R4}
+\lstinputlisting[language=bash]{cfg_files/r4.txt}
+
+\subsubsection*{Kali-PC1}
+\lstinputlisting[language=bash]{cfg_files/Kali-PC1_interfaces.txt}
+\begin{lstlisting}
+echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+\end{lstlisting}
+
+\subsubsection*{Kali-PC2}
+\lstinputlisting[language=bash]{cfg_files/Kali-PC2_interfaces.txt}
+\begin{lstlisting}
+echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+\end{lstlisting}
+
+\subsubsection*{XP1}
+% TODO the pic with the DNS setted
+\includegraphics[height=7cm]{img/WinXPNetworkConfiguration.png}\par
+\includegraphics[height=7cm]{img/WinXPFirewallDisabled.png}\par

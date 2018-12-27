@@ -13,11 +13,7 @@ edit nat source rule 10
 	set source address 10.0.2.0/24 # The CIDR of the NAT
 	set outbound-interface eth1
 commit
-
-## NAT routing
-set protocols rip redistribute static
-set protocols rip interface eth0
-set protocols rip network 0.0.0.0/0
+exit
 
 ## Setting the new ethernet eth0 address
 delete interfaces ethernet eth0 address 192.168.40.1/24
@@ -36,6 +32,12 @@ set protocols rip network 192.168.40.0/24
 set protocols rip network 192.168.42.0/24
 set protocols rip redistribute connected
 set protocols rip timers timeout 35
+commit
+
+## NAT routing
+set protocols rip redistribute static
+set protocols rip interface eth0
+set protocols rip network 0.0.0.0/0
 commit
 
 exit

@@ -1,7 +1,8 @@
 #! /usr/bin/env python
 from scapy.all import *
 
-def check_availability(target):
+def check_availability(target, label):
+    print("\n--> ping to \"" + target + "\" (" + label + ")")
     ans,unans = sr(IP(dst=target)/ICMP())
     if ans:
         print(target + ' is reachable, summary:')
@@ -13,51 +14,67 @@ def check_availability(target):
         return ans,unans
 
 # Availability of each device
-target = "192.168.40.50"
-check_availability(target)
-
 target = "192.168.40.11"
-check_availability(target)
-
-target = "192.168.42.1"
-check_availability(target)
+label = "R5"
+check_availability(target, label)
 
 target = "192.168.42.12"
-check_availability(target)
+label = "R5"
+check_availability(target, label)
 
-target = "192.168.44.3"
-check_availability(target)
-
-target = "192.168.44.4"
-check_availability(target)
-
-target = "192.168.48.6"
-check_availability(target)
-
-target = "192.168.48.9"
-check_availability(target)
+target = "192.168.42.1"
+label = "R1"
+check_availability(target, label)
 
 target = "192.168.50.2"
-check_availability(target)
+label = "R1"
+check_availability(target, label)
 
-target = "192.168.50.7"
-check_availability(target)
+target = "192.168.44.3"
+label = "R1"
+check_availability(target, label)
 
-target = "192.168.55.8"
-check_availability(target)
+target = "192.168.44.4"
+label = "R2"
+check_availability(target, label)
 
 target = "192.168.55.5"
-check_availability(target)
+label = "R2"
+check_availability(target, label)
+
+target = "192.168.48.6"
+label = "R2"
+check_availability(target, label)
+
+target = "192.168.50.7"
+label = "R3"
+check_availability(target, label)
+
+target = "192.168.55.8"
+label = "R3"
+check_availability(target, label)
+
+target = "192.168.48.9"
+label = "R4"
+check_availability(target, label)
 
 target = "192.168.62.10"
-check_availability(target)
+label = "R4"
+check_availability(target, label)
+
+target = "192.168.40.50"
+label = "PC1"
+check_availability(target, label)
 
 target = "192.168.62.60"
-check_availability(target)
+label = "PC2"
+check_availability(target, label)
 
 target = "192.168.62.70"
-check_availability(target)
+label = "XP1"
+check_availability(target, label)
 
 # Testing the NAT
 target = "www.google.com"
-check_availability(target)
+label = "NAT"
+check_availability(target, label)

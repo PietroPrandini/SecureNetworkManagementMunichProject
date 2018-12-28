@@ -25,16 +25,22 @@ After the start of the machine it is setted with this commands:
 
 \subsubsection*{Kali-PC1}
 \lstinputlisting[language=bash]{cfg_files/Kali-PC1_interfaces.txt}
-\begin{lstlisting}
-echo "nameserver 8.8.8.8" >> /etc/resolv.conf
-\end{lstlisting}
+\lstinputlisting[language=bash]{sh/PC1.sh}
 
 \subsubsection*{Kali-PC2}
 \lstinputlisting[language=bash]{cfg_files/Kali-PC2_interfaces.txt}
-\begin{lstlisting}
-echo "nameserver 8.8.8.8" >> /etc/resolv.conf
-\end{lstlisting}
+\lstinputlisting[language=bash]{sh/PC2.sh}
 
 \subsubsection*{XP1}
-\includegraphics[height=7cm]{img/WinXPNetworkConfiguration.png}
-\includegraphics[height=7cm]{img/WinXPFirewallDisabled.png}\par
+\begin{center}
+\includegraphics[width=8cm]{img/WinXPNetworkConfiguration.png}
+\includegraphics[width=8cm]{img/WinXPFirewallDisabled.png}\par
+\includegraphics[width=8cm]{img/WinXPFirewallDisabledForLAN.png}
+\includegraphics[width=8cm]{img/WinXPICMPAllowed.png}
+\end{center}
+
+\subsection{Testing the configuration}
+Bash version of a test.\par
+\lstinputlisting{sh/TestConfiguration.sh}
+Now it's presented a scapy program used to test if the network was working properly before the attacks.\par
+\lstinputlisting{scapy/TestConfiguration.py}

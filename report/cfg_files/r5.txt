@@ -30,14 +30,13 @@ commit
 
 edit nat source rule 10
 	set translation address masquerade
-	set source address 10.0.2.0/24 # The CIDR of the NAT
+	set source address 192.168.32.0/19
 	set outbound-interface eth1
 commit
 exit
 
 ## NAT routing
 set protocols rip redistribute static
-set protocols rip interface eth1
 set protocols rip network 0.0.0.0/0
 commit
 

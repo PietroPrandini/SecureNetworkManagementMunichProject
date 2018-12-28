@@ -69,12 +69,3 @@ check_availability(target, label)
 target = "192.168.62.60"
 label = "PC2"
 check_availability(target, label)
-
-target = "192.168.62.70"
-label = "XP1"
-check_availability(target, label)
-
-# Testing the NAT
-target = "www.google.com"
-label = "NAT"
-check_availability(target, label)

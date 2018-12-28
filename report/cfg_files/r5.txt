@@ -24,20 +24,4 @@ set protocols rip redistribute connected
 set protocols rip timers timeout 35
 commit
 
-## Configuring NAT
-set interfaces ethernet eth1 address dhcp
-commit
-
-edit nat source rule 10
-	set translation address masquerade
-	set source address 192.168.0.0/16
-	set outbound-interface eth1
-commit
-exit
-
-## NAT routing
-set protocols rip redistribute static
-set protocols rip network 0.0.0.0/0
-commit
-
 exit

@@ -15,3 +15,4 @@ set protocols rip interface eth0.42
 set protocols rip interface eth0.44
 set protocols rip interface eth0.50
 commit
+exit

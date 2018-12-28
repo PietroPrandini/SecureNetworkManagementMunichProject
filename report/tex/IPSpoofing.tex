@@ -2,7 +2,8 @@
 \subsection{IP Spoofing}
 % Introduction about this attack
 \subsection{Introduction}
-
+In order to hide the IP address of a sender machine and at the same time identifying a station active on the network, an attacker could be use a method named \textit{IP spoofing}.\par
+The IP spoofing consists to send packets IP with a fake source IP that isn't mapped on the network.
 
 % SCAPY program
 \subsubsection{SCAPY program}
@@ -10,7 +11,9 @@
 
 % Wireshark presenting  the attacker's messages
 \subsubsection{Attacker's messages}
-%\includegraphics[height=7cm]{img/AttackNameWiresharkPacketsCaptured.png}
+Wireshark filter:\\
+\textit{icmp \&\& (ip.addr == 192.168.62.60 || ip.addr == 192.168.102.102)}\par
+\includegraphics[width=16cm]{img/IPSpoofing.png}
 
 % Explanation of the result of the attack
 \subsubsection{Attack's result}

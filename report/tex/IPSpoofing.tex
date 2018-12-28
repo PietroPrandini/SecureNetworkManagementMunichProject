@@ -1,7 +1,7 @@
 % Sample of a report for an attack as requested at wednesday, 5 December 2018, mail "Assignemnt Lab 19"
 \subsection{IP Spoofing}
 % Introduction about this attack
-\subsection{Introduction}
+\subsubsection{Introduction}
 In order to hide the IP address of a sender machine and at the same time identifying a station active on the network, an attacker could be use a method named \textit{IP spoofing}.\par
 The IP spoofing consists to send ICMP packets with a fake source IP that isn't mapped on the network to recognize the reply of the active host connected to the network.\par
 
@@ -23,4 +23,4 @@ Wireshark has received the ICMP reply packets of the host attacked. So the attac
 
 % Method recommended to protect the Network against such an attack
 \subsubsection{How to protect the network}
-In order to protect the network a possible solution is to blocks all the incoming ICMP packets.
+In order to protect the network a possible solution is to blocks all the incoming ICMP packets from the not known IP.\par

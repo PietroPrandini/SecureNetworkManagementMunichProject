@@ -1,8 +1,9 @@
 % Sample of a report for an attack as requested at wednesday, 5 December 2018, mail "Assignemnt Lab 19"
 \subsection{No Flags Set}
 % Introduction about this attack
-\subsection{Introduction}
-
+\subsubsection{Introduction}
+The TCP protocol isn't permit message with no flags setted.\\
+Any operating systems reply to that message in a specific manner. So the attacker could retrive some information about it.\par
 
 % SCAPY program
 \subsubsection{SCAPY program}
@@ -10,11 +11,14 @@
 
 % Wireshark presenting  the attacker's messages
 \subsubsection{Attacker's messages}
-%\includegraphics[height=7cm]{img/AttackNameWiresharkPacketsCaptured.png}
+\includegraphics[width=16cm]{img/NoFlagsSetAttackerMessage.png}\par
 
 % Explanation of the result of the attack
 \subsubsection{Attack's result}
+The host had replyed to the attacker as agreed to its operating system.\\
+\includegraphics[width=16cm]{img/NoFlagsSetResult.png}\par
 
 
 % Method recommended to protect the Network against such an attack
 \subsubsection{How to protect the network}
+In order to protect the victim it could be useful to reject the tcp message with no flags set.

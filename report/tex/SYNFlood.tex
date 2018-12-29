@@ -31,12 +31,16 @@ In this case the attacker (PC2) is sending multiple SYN flags to the victim and 
 The possible solutions for prevent SYN Flood is to increase the backlog for TCP and to enable the syn cookies. Syn cookies are use to prevent syn flood by enlarging the SYN queue when it fills up. Now the server keeps responding with [SYN,ACK] but the server discards the SYN queue entries. When the server received an ACK flag it is able to reconstruct the SYN queue entry using informations encoded in TCP sequence number.\par
 Another solution is to use a firewall. Some implementations of the firewall could be:\\
 \begin{lstlisting}
-iptables -A INPUT -p tcp -m state --state NEW -m recent --update --seconds 60 --hitcount 20 -j DROP
-iptables -A INPUT -p tcp -m state --state NEW -m recent --set -j ACCEPT
+iptables -A INPUT -p tcp -m state --state NEW
+    -m recent --update --seconds 60 --hitcount 20 -j DROP
+
+iptables -A INPUT -p tcp -m state --state NEW
+    -m recent --set -j ACCEPT
 \end{lstlisting}
 In this way we limit the SYN request up to 20 per minute and we prevent the SYN flood. This is not best way to protect the network from Syn flood because in we can also drop legit requests coming from a network behind a nat.\par
 Another implementation of the firewall could be:\\
 \begin{lstlisting}
-iptables -t mangle -I PREROUTING -p tcp -m tcp --dport 80 -m state --state NEW -m tcpmss ! --mss 536:65535 -j DROP
+iptables -t mangle -I PREROUTING -p tcp -m tcp --dport 80
+    -m state --state NEW -m tcpmss ! --mss 536:65535 -j DROP
 \end{lstlisting}
 This rule checks 2 things. The first one is that the TCP Header contains the maximum size that the host wants to allow (hping, common attacking tool, doesn’t set this parameter by default). The second one is to check the port of the clients are in the range from 536 to 35535.\par

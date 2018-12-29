@@ -2,7 +2,8 @@
 \subsection{ICMP Redirect}
 % Introduction about this attack
 \subsection{Introduction}
-
+Routers send ICMP Redirect packet to host for conveing new routing information to hosts.\\
+This attack uses malformed ICMP Redirect packet to try to change the routing table of a victim.\par
 
 % SCAPY program
 \subsubsection{SCAPY program}
@@ -14,7 +15,8 @@
 
 % Explanation of the result of the attack
 \subsubsection{Attack's result}
-
+The aim of this attack is to redirect the traffic to the attacker PC, so the scapy program is set to send a malformed ICMP redirect packet to the victim.
 
 % Method recommended to protect the Network against such an attack
 \subsubsection{How to protect the network}
+In order to avoid this situation it could be useful block all ICMP packets on routers and hosts if not really needed as is in ordinary situation.

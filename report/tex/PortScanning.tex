@@ -1,0 +1,32 @@
+% Sample of a report for an attack as requested at wednesday, 5 December 2018, mail "Assignemnt Lab 19"
+\subsection{Attack Name}
+% SCAPY program
+\subsubsection{SCAPY program}
+\lstinputlisting{scapy/PortScanning.py}
+The objective of this Scapy program is to be able to get a range of opened ports from a victim ip. This program aim the victim located at ip 192.168.40.50 and send a TCP packet with SYN flag for scanning the range of ports from 1 to 1024 with an interval of 5 milliseconds and get the response using the sr() function which sends and receives packets.\par
+
+% Wireshark presenting  the attacker's messages
+\subsubsection{Attacker’s messages and result}
+%\includegraphics[width=16cm]{img/AttackNameWiresharkPacketsCaptured.png}
+{\huge{TODO: import the Wireshark messages here}}\\
+
+This is an example of the scan for the first 2 ports which they respond with [RST,ACK+meaning that there is not service running on that port.
+Scapy used the port 20 for sending the request as default but could be changed using:\\
+\begin{lstlisting}
+packet = IP(dst="192.168.40.50") / TCP(dport=(1,1024), sport=8888, flags="S")
+\end{lstlisting}
+for example but this is not what we are interested.\par
+Using the following wireshark’s filter: \\
+\begin{lstlisting}
+tcp.flags.ack==1 && tcp.flags.syn==1
+\end{lstlisting}
+we can obtain the packets that respond to the tcp request with a [SYN, ACK] flag meaning that there is a service installed using that port:\\
+
+{\huge{TODO: import the Wireshark messages here}}\\
+
+We can understand that in the victim’s pc is running a ssh and http server.\par
+
+% Method recommended to protect the Network against such an attack
+\subsubsection{How to protect the network}
+A way to protect the network from this type of attack can be to use a firewall to block the packet request from an host that has already request 10 tcp messages in 1 second or a similar tcpMessages/Time ratio.\\
+In this way we can use the network normally but when there is a particular activity in the network we have countermeasures to protect the clients.\par

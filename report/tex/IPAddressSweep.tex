@@ -1,0 +1,20 @@
+% Sample of a report for an attack as requested at wednesday, 5 December 2018, mail "Assignemnt Lab 19"
+\subsection{IP Address Sweep}
+% SCAPY program
+\subsubsection{SCAPY program}
+\lstinputlisting{scapy/IPAddressSweep.py}
+This is a very simple but effective program. The scope of this is to send an ICMP request to all IPs of the network 19.168.40.0 with an interval of 10 milliseconds and get the response using the sr() function which sends and receives packets.\par
+
+% Wireshark presenting  the attacker's messages
+\subsubsection{Attacker’s messages and result}
+%\includegraphics[width=16cm]{img/AttackNameWiresharkPacketsCaptured.png}
+
+{\huge{TODO: import the Wireshark messages here}}\\
+
+This is the message captured from the PC2 (as attacker 192.168.62.60) to the network 192.168.40.* using Wireshark.\\
+The objective of this type of attack is to identify the possible victims of my attack. In this case I had 2 responses: router port (192.168.40.11) and PC1 (192.168.40.50).\par
+
+% Method recommended to protect the Network against such an attack
+\subsubsection{How to protect the network}
+The best way to protect the network from this type of attack is to use a firewall which drop all the incoming ICMP request.\\
+In this way the attacker is unable to get a response from the devices inside the network because the ICMP request is not even reaching the devices.\par

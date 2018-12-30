@@ -3,7 +3,7 @@
 % SCAPY program
 \subsubsection{SCAPY program}
 \lstinputlisting{scapy/SYNFlood.py}
-With this program we are going to send every 5 milliseconds a SYN packet to an active port of the victim that we have found in the reconnaissance phase from the port 9999.\\
+With this program we are going to send every 5 milliseconds a SYN packet to an active port of the victim that we have found in the reconnaissance, in our case its port 80. \\
 We have to wait that the session table of the victim reaches its edge, at this point the victim can no longer accept connections even if it is a legit ones.\par
 I’ve also set the following settings on the victim pc to fill faster the session table:\\
 \begin{lstlisting}

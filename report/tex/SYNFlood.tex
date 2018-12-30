@@ -1,5 +1,5 @@
 % Sample of a report for an attack as requested at wednesday, 5 December 2018, mail "Assignemnt Lab 19"
-\subsection{Attack Name}
+\subsection{SYN Flood}
 % SCAPY program
 \subsubsection{SCAPY program}
 \lstinputlisting{scapy/SYNFlood.py}
@@ -14,15 +14,16 @@ systcl -w net.ipv4.tcp_max_syn_backlog=256
 % Wireshark presenting  the attacker's messages
 \subsubsection{Victim's messages}
 
-{\huge{TODO: import the Wireshark messages here}}\\
+\input{"tex/SYNFloodVictimMessages.tex"}
 
 As shown after sending multiple SYN Flood the Victim starts responding with [RST,ACK] flags even to legit requests like the http request from ports 33648-33651 from the browser of the PC2.\par
+\medskip
 \includegraphics[width=16cm]{img/SYNFloodResult.png}\par
 
 % Explanation of the result of the attack
 \subsubsection{Attacker's messages}
 
-{\huge{TODO: import the Wireshark messages here}}\\
+\input{"tex/SYNFloodAttackerMessages.tex"}
 
 In this case the attacker (PC2) is sending multiple SYN flags to the victim and in the last part of the messages is possible to see that even legit requests are denied.\par
 

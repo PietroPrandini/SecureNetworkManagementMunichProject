@@ -18,29 +18,29 @@
 \contentsline {subsubsection}{\numberline {2.3.3}Attacker's messages}{13}{subsubsection.2.3.3}
 \contentsline {subsubsection}{\numberline {2.3.4}Attack's result}{14}{subsubsection.2.3.4}
 \contentsline {subsubsection}{\numberline {2.3.5}How to protect the network}{14}{subsubsection.2.3.5}
-\contentsline {subsection}{\numberline {2.4}Attack Name}{15}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.4}Port Scanning}{15}{subsection.2.4}
 \contentsline {subsubsection}{\numberline {2.4.1}SCAPY program}{15}{subsubsection.2.4.1}
 \contentsline {subsubsection}{\numberline {2.4.2}Attacker\IeC {\textquoteright }s messages and result}{15}{subsubsection.2.4.2}
 \contentsline {subsubsection}{\numberline {2.4.3}How to protect the network}{16}{subsubsection.2.4.3}
 \contentsline {section}{\numberline {3}DoS Attacks}{17}{section.3}
-\contentsline {subsection}{\numberline {3.1}Attack Name}{17}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.1}Drop Communication}{17}{subsection.3.1}
 \contentsline {subsubsection}{\numberline {3.1.1}SCAPY program}{17}{subsubsection.3.1.1}
 \contentsline {subsubsection}{\numberline {3.1.2}Attacker's messages and result}{17}{subsubsection.3.1.2}
 \contentsline {subsubsection}{\numberline {3.1.3}How to protect the network}{17}{subsubsection.3.1.3}
 \contentsline {subsection}{\numberline {3.2}ICMP Redirect}{18}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Introduction}{18}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}SCAPY program}{18}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}Attacker's messages}{18}{subsubsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.3}Attack's result}{18}{subsubsection.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.4}How to protect the network}{18}{subsubsection.3.3.4}
-\contentsline {subsection}{\numberline {3.4}Ping of Death}{19}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Introduction}{19}{subsection.3.5}
-\contentsline {subsubsection}{\numberline {3.5.1}SCAPY program}{19}{subsubsection.3.5.1}
-\contentsline {subsubsection}{\numberline {3.5.2}Attacker's messages}{19}{subsubsection.3.5.2}
-\contentsline {subsubsection}{\numberline {3.5.3}Attack's result}{19}{subsubsection.3.5.3}
-\contentsline {subsubsection}{\numberline {3.5.4}How to protect the network}{19}{subsubsection.3.5.4}
-\contentsline {subsection}{\numberline {3.6}Attack Name}{20}{subsection.3.6}
-\contentsline {subsubsection}{\numberline {3.6.1}SCAPY program}{20}{subsubsection.3.6.1}
-\contentsline {subsubsection}{\numberline {3.6.2}Victim's messages}{20}{subsubsection.3.6.2}
-\contentsline {subsubsection}{\numberline {3.6.3}Attacker's messages}{21}{subsubsection.3.6.3}
-\contentsline {subsubsection}{\numberline {3.6.4}How to protect the network}{21}{subsubsection.3.6.4}
+\contentsline {subsubsection}{\numberline {3.2.1}Introduction}{18}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}SCAPY program}{18}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Attacker's messages}{18}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}Attack's result}{18}{subsubsection.3.2.4}
+\contentsline {subsubsection}{\numberline {3.2.5}How to protect the network}{18}{subsubsection.3.2.5}
+\contentsline {subsection}{\numberline {3.3}Ping of Death}{19}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Introduction}{19}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}SCAPY program}{19}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}Attacker's messages}{19}{subsubsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.4}Attack's result}{19}{subsubsection.3.3.4}
+\contentsline {subsubsection}{\numberline {3.3.5}How to protect the network}{19}{subsubsection.3.3.5}
+\contentsline {subsection}{\numberline {3.4}SYN Flood}{20}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}SCAPY program}{20}{subsubsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.2}Victim's messages}{20}{subsubsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.3}Attacker's messages}{24}{subsubsection.3.4.3}
+\contentsline {subsubsection}{\numberline {3.4.4}How to protect the network}{28}{subsubsection.3.4.4}

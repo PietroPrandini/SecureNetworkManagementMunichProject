@@ -1,0 +1,24 @@
+\begin{center}
+\begin{longtable}{|l|l|l|l|l|l|l|l|p{2.5cm}|}
+\hline
+{\tiny{\textbf{No.}}} & {\tiny{\textbf{Time}}} & {\tiny{\textbf{Source}}} & {\tiny{\textbf{Destination}}} & {\tiny{\textbf{Protocol}}} & {\tiny{\textbf{Src Port}}} & {\tiny{\textbf{Dest Port}}} & {\tiny{\textbf{Length}}} & {\tiny{\textbf{Info}}} \\
+\hline
+\endhead
+5 & 0.004414000 & 192.168.62.60 & 192.168.40.50 & TCP & ftp-data & 1 & 56 & ftp-data $>$ tcpmux [SYN] Seq=0 Win=8192 Len=0\\
+\hline
+10 & 0.005059000 & 192.168.62.60 & 192.168.40.50 & TCP & ftp-data & 1 & 62 & [TCP Out-Of-Order] ftp-data $>$ tcpmux [SYN] Seq=0 Win=8192 Len=0\\
+\hline
+11 & 0.005210000 & 192.168.40.50 & 192.168.62.60 & TCP & tcpmux & 20 & 62 & tcpmux $>$ ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0\\
+\hline
+16 & 0.005575000 & 192.168.40.50 & 192.168.62.60 & TCP & tcpmux & 20 & 62 & tcpmux $>$ ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0\\
+\hline
+17 & 0.011168000 & 192.168.62.60 & 192.168.40.50 & TCP & ftp-data & 2 & 56 & ftp-data $>$ compressnet [SYN] Seq=0 Win=8192 Len=0\\
+\hline
+22 & 0.011645000 & 192.168.62.60 & 192.168.40.50 & TCP & ftp-data & 2 & 62 & [TCP Out-Of-Order] ftp-data $>$ compressnet [SYN] Seq=0 Win=8192 Len=0\\
+\hline
+23 & 0.011765000 & 192.168.40.50 & 192.168.62.60 & TCP & compressnet & 20 & 62 & compressnet $>$ ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0\\
+\hline
+28 & 0.012130000 & 192.168.40.50 & 192.168.62.60 & TCP & compressnet & 20 & 62 & compressnet $>$ ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0 \\
+\hline
+\end{longtable}
+\end{center}

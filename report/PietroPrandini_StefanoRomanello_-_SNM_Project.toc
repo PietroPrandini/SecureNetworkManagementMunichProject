@@ -37,8 +37,7 @@
 \contentsline {subsubsection}{\numberline {3.3.1}Introduction}{19}{subsubsection.3.3.1}
 \contentsline {subsubsection}{\numberline {3.3.2}SCAPY program}{19}{subsubsection.3.3.2}
 \contentsline {subsubsection}{\numberline {3.3.3}Attacker's messages}{19}{subsubsection.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.4}Attack's result}{19}{subsubsection.3.3.4}
-\contentsline {subsubsection}{\numberline {3.3.5}How to protect the network}{19}{subsubsection.3.3.5}
+\contentsline {subsubsection}{\numberline {3.3.4}How to protect the network}{19}{subsubsection.3.3.4}
 \contentsline {subsection}{\numberline {3.4}SYN Flood}{20}{subsection.3.4}
 \contentsline {subsubsection}{\numberline {3.4.1}SCAPY program}{20}{subsubsection.3.4.1}
 \contentsline {subsubsection}{\numberline {3.4.2}Victim's messages}{20}{subsubsection.3.4.2}
